@@ -1,0 +1,30 @@
+library ieee;
+use iee.std_logic_1164.all;
+
+entity blocoControle is
+	generic(
+		dataWidth: positive := 8;
+		addressWidth: positive := 8
+	);
+	port(
+		-- control inputs
+		clk		: in std_logic;
+		reset_req: in std_logic;
+		-- data inputs
+		address	: IN STD_LOGIC_VECTOR (addressWidth-1 DOWNTO 0);
+		writedata: IN STD_LOGIC_VECTOR (dataWidth-1 DOWNTO 0);
+		-- data outputs
+		readdata	: OUT STD_LOGIC_VECTOR (dataWidth-1 DOWNTO 0);
+		-- commands from OperativeBlock
+		signal cmdSetI, cmdResetI, cmdSomaPontos, cmdSubTam, cmdSubCarta, cmdResetBaralho, cmdSetBaralho, cmdResetTam, 
+			cmdSetTam, cmdMultIBaralho, cmdMultTam, cmdSetPontos,cmdResetPontos, cmdSetAddCarta, cmdResetAddCarta,
+			cmdSetCarta,cmdResetCarta,cmdResetPos, cmdSetPos: in std_logic;
+
+		--status to OperativeBlock
+		sttPontosMaiorDezesseis, sttPontosMaiorVinte, sttCompAddCarta, sttMenorTam, sttCompBaralho: out std_logic;
+	);
+
+architecture arch of blocoControle is
+begin
+	saida <= '1' when a = b else '0';
+end architecture;

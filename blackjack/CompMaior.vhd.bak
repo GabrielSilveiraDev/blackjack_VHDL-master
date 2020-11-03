@@ -1,0 +1,16 @@
+library ieee;
+use iee.std_logic_1164.all;
+
+entity CompMaior is
+	generic (tam: NATURAL);
+	port (
+		a: in std_logic_vector(tam-1 downto 0);
+		b: in std_logic_vector(tam-1 downto 0);
+		saida: out std_logic_vector(tam-1 downto 0)
+	);
+end entity;
+
+architecture arch of CompMaior is
+begin
+	saida <= '1' when a > b else '0';
+end architecture;

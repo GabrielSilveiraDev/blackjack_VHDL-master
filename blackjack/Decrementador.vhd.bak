@@ -1,0 +1,17 @@
+library ieee;
+use iee.std_logic_1164.all;
+
+entity Incrementador is
+	generic (
+		width := NATURAL
+	);
+	port (
+		a: in std_logic_vector(width-1 downto 0);
+		saida: out std_logic_vector(width-1 downto 0);
+	);
+end entity;
+
+architecture arch of Incrementador is
+begin
+	saida <= a - '1'
+end architecture;

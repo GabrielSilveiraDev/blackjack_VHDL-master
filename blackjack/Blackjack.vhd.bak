@@ -1,0 +1,31 @@
+--refinar algoritmo para entrega parcial -15/10
+
+--from random import randint
+--
+--baralho = [1,2,3,4,5,6,7,8,9,10,11,12,13,]*4
+--pontos = 0
+--hand = []
+--
+--    while True:
+--        carta = randint(1,13)
+--
+--        print(f"Seus pontos: {pontos}")
+--
+--        addCarta = int(input("Mais uma carta?: 1/0 "))
+--
+--        if addCarta == 1:
+--        pontos += carta
+--        baralho.pop(carta-1)
+--        hand.append(carta)
+--
+--        if pontos >= 21:
+--        pontos = 0
+--        break
+--
+--        if pontos >= 17:
+--        break
+
+--talvez converter para c para baixar o nível do algoritmo
+
+
+S0 - pontos --> 0 ; 

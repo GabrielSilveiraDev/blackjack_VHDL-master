@@ -1,0 +1,18 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Blackjack_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Error: (vdel-42) Unsupported ModelSim library format for "C:/Users/Avell/Desktop/Aula/SD/blackjack_VHDL-master/blackjack/simulation/modelsim/rtl_work". (Format: 4)
+# 
+# ** Warning: (vdel-57) Library 'C:/Users/Avell/Desktop/Aula/SD/blackjack_VHDL-master/blackjack/simulation/modelsim/rtl_work' is missing or is not a valid ModelSim library.
+# 
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vdel failed.
+# Error in macro ./Blackjack_run_msim_rtl_vhdl.do line 4
+# D:/altera/13.0/modelsim_ase/win32aloem/vdel failed.
+#     while executing
+# "vdel -lib rtl_work -all"
+#     invoked from within
+# "if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }"
